@@ -13,3 +13,30 @@
 
 ```bash
 go install github.com/vektra/mockery/v2@v2.42.0
+```
+
+## Сборка клиента 
+
+```bash
+ docker build -f client.Dockerfile -t Тег:Версия
+```
+
+## Сборка Сервера  
+
+```bash
+ docker build -f server.Dockerfile -t Тег:Версия
+```
+## Переменные окражения 
+
+###Сервер
+```bash
+SERVER_ADDRESS - адресс tpc сервера
+SERVER_PORT - порт tpc сервера
+SERVER_MIN_SOLUTION_RANGE - минимальное значение, которые нужно получить в хеш функции 
+SERVER_MAX_SOLUTION_RANGE - максимальное значение, которые нужно получить в хеш функции
+```
+
+###Клиент
+```bash
+SERVER_ADDRESS - адресс tpc сервера c портом
+```
