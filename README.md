@@ -26,7 +26,7 @@ go install github.com/vektra/mockery/v2@v2.42.0
 ```bash
  docker build -f server.Dockerfile -t Тег:Версия
 ```
-## Переменные окражения 
+## Переменные окружения 
 
 ### Сервер
 ```bash
